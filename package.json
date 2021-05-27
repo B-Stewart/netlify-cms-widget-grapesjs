@@ -1,0 +1,30 @@
+{
+  "name": "netlify-cms-widget-grapesjs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "exports": "./dist/netlify-cms-widget-grapesjs.modern.js",
+  "main": "./dist/netlify-cms-widget-grapesjs.cjs",
+  "module": "./dist/netlify-cms-widget-grapesjs.module.js",
+  "unpkg": "./dist/netlify-cms-widget-grapesjs.umd.js",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle watch --jsx React.createElement"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "0.13.1",
+    "typescript": "4.3.2",
+    "@types/react": "16.8.24"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16.8.6"
+  }
+}
